@@ -81,7 +81,7 @@ body {
 
             @include v.breakpoint(desktop) {
                 background-image: url(../assets/desktop/image-host.jpg);
-                background-size: 888px;
+                background-size: 55.5rem;
                 background-position: calc(100% + 6rem) center;
             }
 
@@ -104,7 +104,7 @@ body {
                 }
 
                 @include v.breakpoint(desktop) {
-                    margin: 102px 0 115px 125px;
+                    margin: 6.375rem 0 7.2rem 7.8rem;
                 }
             }
 
@@ -155,7 +155,7 @@ body {
                     }
 
                     div {
-                        margin-right: 25px;
+                        margin-right: 1.56rem;
 
                         &:last-child {
                             margin-right: 0;
@@ -230,7 +230,7 @@ body {
             @include v.breakpoint(tablet) {
                 display: block;
                 position: absolute;
-                bottom: 0px;
+                bottom: 0;
                 left: 1.875rem;
             }
 
