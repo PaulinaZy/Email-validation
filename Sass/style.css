@@ -200,7 +200,7 @@ body main::after {
   body main::after {
     background-image: url(../assets/tablet/image-host.jpg);
     opacity: 1;
-    background-size: 30.69rem;
+    background-size: auto;
     background-position: top right;
     background-repeat: no-repeat;
   }
@@ -209,7 +209,7 @@ body main::after {
   body main::after {
     background-image: url(../assets/desktop/image-host.jpg);
     background-size: 55.5rem;
-    background-position: calc(100% + 6rem) center;
+    background-position: right center;
   }
 }
 @media (min-width: 48rem) {
@@ -218,18 +218,23 @@ body main::after {
     padding-inline: 0;
   }
 }
+@media (min-width: 90rem) {
+  body main .request-page {
+    padding: 6.4rem 10.3rem;
+  }
+}
 body main .request-page .logo {
   margin-bottom: 3.5rem;
   margin-top: 3.875rem;
 }
 @media (min-width: 48rem) {
   body main .request-page .logo {
-    margin: 3.125rem 2.4rem 9.5rem 2.4rem;
+    margin: 3.125rem 0 8.5rem 2.4rem;
   }
 }
 @media (min-width: 90rem) {
   body main .request-page .logo {
-    margin: 6.375rem 0 7.2rem 7.8rem;
+    margin: 0 0 132px 0;
   }
 }
 @media (min-width: 48rem) {
@@ -245,7 +250,7 @@ body main .request-page .logo {
 }
 @media (min-width: 90rem) {
   body main .request-page .text-container {
-    padding: 5.5rem 3.6rem 0 19.4rem;
+    padding: 5.5rem 3.6rem 0 0;
   }
 }
 body main .request-page .text-container h1 {
@@ -269,6 +274,7 @@ body main .request-page .text-container .company-logos-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.56rem;
   overflow: hidden;
   margin-bottom: 3rem;
 }
@@ -279,12 +285,6 @@ body main .request-page .text-container .company-logos-container {
     margin-top: 4rem;
     margin-bottom: 0;
   }
-}
-body main .request-page .text-container .company-logos-container div {
-  margin-right: 1.56rem;
-}
-body main .request-page .text-container .company-logos-container div:last-child {
-  margin-right: 0;
 }
 body main .request-page .text-container .company-logos-container div img {
   color: #54E6AF;

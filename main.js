@@ -4,6 +4,7 @@ const form = document.querySelector("#form");
 
 // Add click listener to button
 form.addEventListener("submit", validateEmail);
+btn.addEventListener("keydown", clickEnter);
 
 //Creating a box msg
 let msg = document.createElement("div");
@@ -24,11 +25,18 @@ function validateEmail(e) {
     //if email is correct
     if (regexEmail.test(input.value)) {
         msg.style.color = "#54E6AF";
-        msg.innerText = "Hurray! Your access has been granted"
+        msg.innerText = "Hurray! Your access has been granted";
+        input.value = "";
         return true;
     } else {
         msg.style.color = "#FB3E3E";
         msg.innerText = "Oops! Please check your email"
         return false;
+    }
+}
+
+function clickEnter(e) {
+    if (e.keyCode === 13) {
+        validateEmail();
     }
 }
