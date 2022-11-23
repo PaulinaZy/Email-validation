@@ -1,0 +1,368 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 2.375rem;
+  color: #54E6AF;
+}
+h1 .h1-color-change {
+  color: #fff;
+}
+@media (min-width: 48rem) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+@media (min-width: 90rem) {
+  h1 {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+  }
+}
+
+p {
+  font-size: 0.94rem;
+  font-weight: 100;
+  line-height: 1.56rem;
+  color: #C2CBE5;
+}
+@media (min-width: 48rem) {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  background-color: #121725;
+}
+body main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+body main::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../assets/mobile/image-host.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+}
+@media (min-width: 48rem) {
+  body main::after {
+    background-image: url(../assets/tablet/image-host.jpg);
+    opacity: 1;
+    background-size: 30.69rem;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 90rem) {
+  body main::after {
+    background-image: url(../assets/desktop/image-host.jpg);
+    background-size: 888px;
+    background-position: calc(100% + 6rem) center;
+  }
+}
+@media (min-width: 48rem) {
+  body main {
+    text-align: left;
+    padding-inline: 0;
+  }
+}
+body main .request-page .logo {
+  margin-bottom: 3.5rem;
+  margin-top: 3.875rem;
+}
+@media (min-width: 48rem) {
+  body main .request-page .logo {
+    margin: 3.125rem 2.4rem 9.5rem 2.4rem;
+  }
+}
+@media (min-width: 90rem) {
+  body main .request-page .logo {
+    margin: 102px 0 115px 125px;
+  }
+}
+@media (min-width: 48rem) {
+  body main .request-page .text-container {
+    background-color: #121725;
+    padding: 5.875rem 2.4rem 0 2.4rem;
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (min-width: 90rem) {
+  body main .request-page .text-container {
+    padding: 5.5rem 3.6rem 0 19.4rem;
+  }
+}
+body main .request-page .text-container h1 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  body main .request-page .text-container h1 {
+    margin-bottom: 1.9rem;
+  }
+}
+body main .request-page .text-container .main-p {
+  margin-bottom: 2.01rem;
+}
+@media (min-width: 48rem) {
+  body main .request-page .text-container .main-p {
+    width: 27.8rem;
+    margin-bottom: 2.5rem;
+  }
+}
+body main .request-page .text-container .company-logos-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+@media (min-width: 48rem) {
+  body main .request-page .text-container .company-logos-container {
+    order: 4;
+    max-width: 33.5rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+}
+body main .request-page .text-container .company-logos-container div {
+  margin-right: 25px;
+}
+body main .request-page .text-container .company-logos-container div:last-child {
+  margin-right: 0;
+}
+body main .request-page .text-container .company-logos-container div img {
+  color: #54E6AF;
+  display: block;
+  width: 100%;
+  opacity: 0.6;
+}
+body main .request-page .text-container form {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 48rem) {
+  body main .request-page .text-container form {
+    width: 27.81rem;
+    position: relative;
+  }
+}
+body main .request-page .text-container form input, body main .request-page .text-container form button {
+  background-color: #2C344B;
+  border: none;
+  outline: none;
+  border-radius: 1.75rem;
+  padding: 0.6rem 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+@media (min-width: 48rem) {
+  body main .request-page .text-container form input, body main .request-page .text-container form button {
+    padding: 0.875rem 2rem;
+  }
+}
+body main .request-page .text-container form ::-moz-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+body main .request-page .text-container form :-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+body main .request-page .text-container form ::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+body main .request-page .text-container form button {
+  background-color: #54E6AF;
+  color: #121725;
+  line-height: 1.75rem;
+}
+body main .request-page .text-container form button:hover {
+  background-color: #B3FFE2;
+}
+@media (min-width: 48rem) {
+  body main .request-page .text-container form button {
+    position: absolute;
+    top: 0.28rem;
+    right: 0.28rem;
+    padding: 0.56rem 1.69rem;
+  }
+}
+body main .dots {
+  display: none;
+}
+@media (min-width: 48rem) {
+  body main .dots {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 1.875rem;
+  }
+}
+@media (min-width: 90rem) {
+  body main .dots {
+    position: fixed;
+    bottom: 4.875rem;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=style.css.map */

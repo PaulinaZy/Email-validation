@@ -1,0 +1,32 @@
+//FONT
+
+$font: 'Chivo',
+sans-serif;
+
+//COLORS
+
+$white: #fff;
+$blackish: #121725;
+$green: #54E6AF;
+$hover-green: #B3FFE2;
+$light-grey: #C2CBE5;
+$dark-grey: #2C344B;
+
+//SIZES
+$p-s: 0.94rem; //15px
+$p-m: 1.125rem; //18px
+$h1-s: 1.6rem; //27px
+$h1-m: 3rem; //48px
+$h1-l: 3.25rem; //52px
+$form-size: 0.88rem; //14px
+
+//BREAKPOINT
+$breakpoints: (tablet: 48rem, //768px
+    desktop: 90rem //1440px
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
